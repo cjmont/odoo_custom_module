@@ -2,7 +2,7 @@
 <br />
 <p>
   <h3>Consult an api-rest and save your pokemon in an own Odoo Module</h3>
-  <img src="https://github.com/doo_custom_module/img/pokemon.png" />
+  <img src="https://github.com/cjmont/odoo_custom_module/blob/main/img/pokemon.png" />
 </p>
 
 
