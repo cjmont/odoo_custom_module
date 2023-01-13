@@ -18,7 +18,7 @@
 
 A custom module is required in Odoo that contains:
 
-· Scheduled task that consults the API https://pokeapi.co/api/v2/pokemon/ and stores the information in the custom module "Pokémon".
+Scheduled task that consults the API https://pokeapi.co/api/v2/pokemon/ and stores the information in the custom module "Pokémon".
 
 Create a View that lists the information stored in the Pokémon model
 
