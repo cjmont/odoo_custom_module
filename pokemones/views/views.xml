@@ -1,0 +1,61 @@
+<odoo>
+    <data> 
+        <record id="view_pokemon_pokemones_form" model="ir.ui.view">
+            <field name="name">view.pokemon.pokemones.form</field>
+            <field name="model">pokemon.pokemones</field>
+            <field name="arch" type="xml">
+                <form string="Pokemones">
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                           
+                        </div>
+                        <group name="group_top">
+                            <group name="group_left">
+                                <field name="name"/>
+                                <field name="url"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_custom_pokemon_pokemones_tree" model="ir.ui.view">
+            <field name="name">view.custom.pokemon.pokemones.tree</field>
+            <field name="model">pokemon.pokemones</field>
+            <field name="arch" type="xml">
+                <tree string="Visit">
+                    <field name="name"/>
+                    <field name="url"/>
+                    <button name="task_program" string="Ejecutar Tarear" class="oe_highlight" type="object"/>
+                </tree>
+            </field>
+        </record>
+         
+        <record id="action_custom_pokemon_view" model="ir.actions.act_window">
+            <field name="name">Pokemon</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">pokemon.pokemones</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Pokemones
+                </p>
+                <p>
+                    Click 'Crear' para añadir nuevos pokemones manualmente
+                </p>
+            </field>
+        </record>
+
+
+        <menuitem id="menu_pokemon_root" name="Pokemon" sequence="10"/>
+
+        <menuitem id="menu_custom_pokemones" name="Operaciones" parent="menu_pokemon_root" sequence="0"/>
+
+        <menuitem id="menu_custom_crm_visit" name="Pokemones" parent="menu_custom_pokemones" sequence="0"
+                  action="action_custom_pokemon_view"/>
+
+
+
+    </data>
+</odoo>
