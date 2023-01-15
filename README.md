@@ -39,41 +39,31 @@ The JSON that the endpoints must receive and return is the following:
 ```sh
 {
 
-"id": 1,
+      "id": 1,
+      "createtime": "2021-11-16 12:00",
+      "document_number": "001-001-00001234", 
+      "customer": {
+          "document_type": "Cédula|RUC|Pasaporte", 
+          "document_number": "0987654321", 
+          "first_name": "Christian",
+          "last_name": "Jaque", 
+          "phone": "0987654321",
+          "address": "Guayaquil, Urdesa", 
+          "email": "cjaque@macronegocios.ec"
+      },
 
-"createtime": "2021-11-16 12:00",
-
-"document_number": "001-001-00001234", "customer": {
-
-"document_type": "Cédula|RUC|Pasaporte", "document_number": "0987654321", "first_name": "Christian",
-
-"last_name": "Jaque", "phone": "0987654321",
-
-"address": "Guayaquil, Urdesa", "email": "cjaque@macronegocios.ec"
-
-},
-
-"items": [
-
-{
-
-"reference": "SKU1234", "name": "Labial",
-
-"price": 10.50
-
-"discount": 2.50,
-
-"subtotal": 8.50,
-
-"tax": 1.02,
-
-"total": 9.52
-
-},
-
-…
-
-]
+      "items": [
+          {
+            "reference": "SKU1234", 
+            "name": "Labial",
+            "price": 10.50,
+            "discount": 2.50,
+            "subtotal": 8.50,
+            "tax": 1.02,
+            "total": 9.52
+          },
+      ]
+}
 ```
 
 
