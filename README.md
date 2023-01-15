@@ -38,7 +38,6 @@ The JSON that the endpoints must receive and return is the following:
 
 ```sh
 {
-
       "id": 1,
       "createtime": "2021-11-16 12:00",
       "document_number": "001-001-00001234", 
@@ -51,7 +50,6 @@ The JSON that the endpoints must receive and return is the following:
           "address": "Guayaquil, Urdesa", 
           "email": "cjaque@macronegocios.ec"
       },
-
       "items": [
           {
             "reference": "SKU1234", 
